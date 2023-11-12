@@ -1,0 +1,26 @@
+.sponsors {
+    margin-top: 124px;
+    // .sponsors__row
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mediaTablet {
+            justify-content: space-around;
+        }
+
+        @include smallTablet {
+            flex-wrap: wrap;
+        }
+    }
+
+    // .sponsors__image
+
+    &__image {
+        width: 135.71px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+}

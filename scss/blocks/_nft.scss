@@ -1,0 +1,226 @@
+.nft {
+    margin-top: 91px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mediaTablet {
+            justify-content: space-around;
+        }
+
+        @include smallTablet {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    // .nft__left
+
+    &__left {
+        flex-direction: column;
+    }
+
+    // .nft__right
+
+    &__right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.left {
+
+
+    // .left__title
+
+    &__title {
+        max-width: 400px;
+        color: #FFF;
+        font-family: Space Grotesk;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 12px;
+
+        @include mediaTablet {
+            font-size: 50px;
+        }
+
+        @include superSmallTablet {
+            font-size: 36px;
+            text-align: center;
+        }
+
+    }
+
+    // .left__description
+
+    &__description {
+        max-width: 300px;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 12px;
+
+        @include mediaTablet {
+            font-size: 12px;
+        }
+
+
+
+    }
+
+    // .left__button
+
+    &__button {
+        color: #E5E5E5;
+        font-family: Space Grotesk;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+
+        padding: 10px 47px;
+        border-radius: 5px;
+        background: linear-gradient(86deg, rgba(191, 196, 238, 0.09) -105.02%, #C367E6 10.94%, rgba(190, 206, 239, 0.00) 121.57%);
+        margin-bottom: 81px;
+
+        @include mediaTablet {
+            font-size: 16px;
+            padding: 8px 20px;
+        }
+
+    }
+
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 71px;
+
+    @include smallTablet {
+        justify-content: center;
+    }
+
+    @include mediaTablet {
+        gap: 50px;
+    }
+    // .info__title
+
+    &__title {
+
+        h2 {
+            color: #FFF;
+            font-family: Space Grotesk;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            @include mediaTablet {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            color: #E5E5E5;
+            font-family: Space Grotesk;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+    }
+}
+.right {
+    border-radius: 10px;
+    background: #30384D;
+    padding: 30px;
+
+    @include mediaTablet {
+        padding: 30px 5px;
+    }
+    // .right__top
+
+    &__image {
+        width: 100%;
+        margin-bottom: 10px;
+
+        @include mediaTablet {
+            width: 80%
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 154px;
+
+        @include mediaTablet {
+            gap: 50px;
+        }
+
+        h2 {
+            color: #FFF;
+            font-family: Space Grotesk;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;  
+        }
+    }
+
+    // .right__monkeys
+
+    &__monkeys {
+
+        img {
+            width: 29px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+    }
+}
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 100px;
+
+    @include mediaTablet {
+        gap: 50px;
+    }
+
+
+    // .bottom__title
+
+    &__title {
+
+        h2 {
+            color: $second-color;
+            font-family: DM Mono;
+            font-size: 8px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        p {
+            color: #FFF;
+            font-family: DM Mono;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.hotdrops {
+    margin-top: 56px;
+    // .hotdrops__title
+
+    &__title {
+        font-family: DM Mono;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        background: linear-gradient(180deg, #9C76B8 0%, rgba(156, 118, 184, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        text-align: center;
+        margin-bottom: 13px;
+    }
+
+    // .hotdrops__subtitle
+
+    &__subtitle {
+        text-align: center;
+        color: #FFF;
+        font-family: Space Grotesk;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+
+        margin-bottom: 20px;
+    }
+
+}
+
+.search-hotdrops {
+
+    // .search-hotdrops__cards
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mediaTablet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        @include smallTablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include superSmallTablet {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    // .search-hotdrops__card
+
+    &__card {
+        color: #FFF;
+        font-family: DM Mono;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+
+        border-radius: 5px;
+        background: #30384D;
+        padding: 10px 23px;
+
+        &._active {
+            background: #3D2A3D;
+        }
+    }
+}

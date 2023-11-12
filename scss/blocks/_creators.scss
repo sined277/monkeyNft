@@ -1,0 +1,125 @@
+.creators {
+    margin-top: 90px;
+    // .creators__title
+
+    &__title {
+        font-family: DM Mono;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        background: linear-gradient(180deg, #B469D8 0%, rgba(180, 105, 216, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        text-align: center;
+
+        margin-bottom: 18px;
+    }
+
+    // .creators__subtitle
+
+    &__subtitle {
+        color: #FFF;
+        font-family: Space Grotesk;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        margin-bottom: 41px;
+
+        text-align: center;
+    }
+
+    // .creators__cards
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        @include mediaTablet {
+            justify-content: space-around;
+        }
+    }
+}
+
+.card-creators {
+
+    border-radius: 5px;
+    background: #30384D;
+    padding: 9px;
+    max-width: 290px;
+
+    display: flex;
+    align-items: center;
+    // .card-creators__image
+
+    &__image {
+        width: 100%;
+        width: 100px;
+        height: 80px;
+        flex-shrink: 0;
+        margin-right: 7px;
+    }
+
+    // .card-creators__info
+
+    &__info {
+        margin-right: 100px;
+        h2 {
+            color: #FFF;
+            font-family: DM Mono;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        p {
+            color: #FFF;
+            font-family: DM Mono;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    // .card-creators__button
+
+    &__button {
+        width: 100%;
+    }
+}
+
+.creators {
+
+    &__buttons {
+        margin-top: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+
+        color: #E5E5E5;
+        font-family: Space Grotesk;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        border-radius: 5px;
+        border: 1px solid #FFF;
+
+        background-color: transparent;
+        padding: 4px 25px;
+    }
+}
